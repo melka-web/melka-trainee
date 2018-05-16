@@ -15,8 +15,9 @@
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
 <link rel="stylesheet" type="text/css" href="fontawesome-free-5.0.12/web-fonts-with-css/css/fontawesome.min.css">
 <link rel="stylesheet" type="text/css" href="fontawesome-free-5.0.12/web-fonts-with-css/css/fontawesome-all.css">
+
 </head>
-<body>
+<body id="body">
 
 <header class="">
 		<div class="row logo-row">
@@ -63,7 +64,7 @@
 					<div class="">
 						<h4><strong>Start din karriere som trainee</strong></h4>
 						<div class="iconfont d-flex justify-content-center ">
-							<span class="iconfont">🢓</span>
+							<span class="iconfont" onclick="topFunction()" id="myBtn" title="Go to bottom"> 🢓</span>
 						</div>
 					</div>
 				</div>
@@ -200,38 +201,7 @@ Min melding...
 			<p> <a href="#">Personvern</a></p>
 		</div>
 	</div>
-</div>
- <script>
-    function openSlideMenu(){
-      document.getElementById('side-menu').style.width = '250px';
-      document.getElementById('main').style.marginLeft = '250px';
-    }
-
-    function closeSlideMenu(){
-      document.getElementById('side-menu').style.width = '0';
-      document.getElementById('main').style.marginLeft = '0';
-    }
-
-    $('.button').on('click', function submit(){
-	 	 
- 		 $('.inputs').css('border-color', 'red');
-	});
-    function toggleSidebar() {
-	document.getElementById('sidebar').classList.toggle('active');
-	}
-
-	(function() {
-
-	var img = document.getElementById('train').firstChild;
-	img.onload = function() {
-    if(img.height > img.width) {
-        img.height = '100%';
-        img.width = 'auto';
-   		}
-	};
-
-	}());
-  </script>
+</div> 
 <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
 <script type="text/javascript" src="snack.js"></script>
 
