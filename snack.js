@@ -30,6 +30,7 @@
 
 	
 function topFunction() { 
-    document.documentElement.scrollTop = 2500; 
+    //document.documentElement.scrollTop = 2500; 
+    var element= document.getElementById('scroll-test');
+element.scrollIntoView({behavior: "smooth"});
 }
-
